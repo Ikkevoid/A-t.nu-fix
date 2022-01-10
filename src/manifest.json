@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "A-t.nu fix",
+    "description": "Script removing copy protection system that breaks reader mode, selection and accessibility for users",
+    "version": "1.0",
+    "icons": {
+        "512": "icon512.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://a-t.nu/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
